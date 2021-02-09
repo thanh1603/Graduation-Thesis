@@ -1,0 +1,38 @@
+.error {
+    color: rgba(213, 0, 13, 0.91);
+}
+.control-label-rq {
+    display: inline-block;
+}
+.control-label-rq::after{
+    color: rgba(213, 0, 13, 0.91) !important;
+    content: "*" !important;
+    font-size: 15px !important;
+    display: inline-block !important;
+}
+.page-item {
+    cursor: pointer;
+}
+
+#dataTable_info{
+    display: none;
+}
+
+.product-box .product-thumbnail.flexbox-grid a img {
+    max-width: 100%;
+    width: auto;
+    height: 170px !important;
+    width: 225px !important;
+}
+.dataTables_empty {
+    display: none !important;
+}
+.submenu {
+    background-color: transparent !important;
+}
+#dataTable_wrapper td {
+    vertical-align: middle !important;
+}
+.ui-dialog-titlebar-close {
+    display: none !important;
+}

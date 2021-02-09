@@ -82,8 +82,8 @@ public class Constant {
 
     }
 
-    public static final String ROOT_IMAGE_URL = "D:\\KhoaLuan\\images\\" ;
-    public static final String ROOT_CART = "D:\\KhoaLuan\\carts\\";
+    public static final String ROOT_IMAGE_URL = "D:\\doantotnghiep\\images\\" ;
+    public static final String ROOT_CART = "D:\\doantotnghiep\\carts\\";
 
     public static final String BLANK = "";
 
