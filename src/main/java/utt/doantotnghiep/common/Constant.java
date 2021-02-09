@@ -4,6 +4,7 @@ import java.io.File;
 
 public class Constant {
     public static class TEMPLATE_VIEW {
+        //tran sinh thanh
         // Trang chu
         public static final String INDEX = "index";
         // Trang tat ca san pham
