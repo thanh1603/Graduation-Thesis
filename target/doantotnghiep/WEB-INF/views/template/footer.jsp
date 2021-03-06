@@ -37,19 +37,32 @@
                             <div class="footer-widget"><h3 class="margin-bottom-20 hastog"><span>Facebook</span></h3>
                                 <div class="list-menu">
                                     <div class="footerText">
-                                        <div class="fb-page fb_iframe_widget"
-                                             data-href="https://www.facebook.com/sinhtu99"
-                                             data-small-header="false" data-adapt-container-width="true"
-                                             data-hide-cover="false" data-show-facepile="false"
-                                             fb-xfbml-state="rendered"
-                                             fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=829732533863539&amp;container_width=262&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FFacebookVietNam&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false">
-                                            <span style="vertical-align: bottom; width: 262px; height: 130px;"><iframe
-                                                    name="fad6e53b9c90a4" width="1000px" height="1000px" frameborder="0"
-                                                    allowtransparency="true" allowfullscreen="true" scrolling="no"
-                                                    allow="encrypted-media" title="fb:page Facebook Social Plugin"
-                                                    src="./Freshfood - Hệ thống cửa hàng thực phẩm sạch VietGAP_files/page.html"
-                                                    style="border: none; visibility: visible; width: 262px; height: 130px;"
-                                                    class=""></iframe></span></div>
+                                        <div class="fb-page fb_iframe_widget">
+                                            <ul class="list-menu list-blogs">
+                                                <li><a href="https://www.facebook.com/sinhtu99">https://www.facebook.com/sinhtu99</a></li>
+                                                <li><a href="/doantotnghiep">Freshfood - Hệ thống cửa hàng thực phẩm sạch VietGAP</a>
+                                                </li>
+
+                                            </ul>
+<%--                                            <a href="https://www.facebook.com/sinhtu99">--%>
+<%--                                                https://www.facebook.com/sinhtu99--%>
+<%--                                            </a>--%>
+<%--                                            <a href="/doantotnghiep">--%>
+<%--                                                Freshfood - Hệ thống cửa hàng thực phẩm sạch VietGAP--%>
+<%--                                            </a>--%>
+<%--                                             data-href="https://www.facebook.com/sinhtu99"--%>
+<%--                                             data-small-header="false" data-adapt-container-width="true"--%>
+<%--                                             data-hide-cover="false" data-show-facepile="false"--%>
+<%--                                             fb-xfbml-state="rendered"--%>
+<%--                                             fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=829732533863539&amp;container_width=262&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FFacebookVietNam&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false">--%>
+<%--                                            <span style="vertical-align: bottom; width: 262px; height: 130px;"><iframe--%>
+<%--                                                    name="fad6e53b9c90a4" width="1000px" height="1000px" frameborder="0"--%>
+<%--                                                    allowtransparency="true" allowfullscreen="true" scrolling="no"--%>
+<%--                                                    allow="encrypted-media" title="fb:page Facebook Social Plugin"--%>
+<%--                                                    src="./Freshfood - Hệ thống cửa hàng thực phẩm sạch VietGAP_files/page.html"--%>
+<%--                                                    style="border: none; visibility: visible; width: 262px; height: 130px;"--%>
+<%--                                                    class=""></iframe></span>--%>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

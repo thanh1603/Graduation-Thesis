@@ -5,17 +5,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
+import utt.doantotnghiep.bean.Cart;
 import utt.doantotnghiep.bean.Result;
 import utt.doantotnghiep.common.Constant;
 import utt.doantotnghiep.common.StringUtil;
 import utt.doantotnghiep.entities.Catalog;
 import utt.doantotnghiep.entities.Product;
+import utt.doantotnghiep.entities.User;
 import utt.doantotnghiep.form.ProductForm;
 import utt.doantotnghiep.service.ICatalogService;
 import utt.doantotnghiep.service.IProductService;
+import utt.doantotnghiep.service.IUserService;
 import utt.doantotnghiep.service.ServiceCommon;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -26,6 +31,9 @@ public class ProductServiceImpl extends ServiceCommon implements IProductService
 
     @Autowired
     private ICatalogService iCatalogService;
+
+    @Autowired
+    private IUserService iUserService;
 
     public Result getProductByCatalogCode(String catalogCode, int offset, int limit) {
         Result  result = new Result();
@@ -93,6 +101,37 @@ public class ProductServiceImpl extends ServiceCommon implements IProductService
         }
         return result;
     }
+
+//    private Map<String, Integer> products(List<Product> products) {
+//        Set<String> productList = products.stream().map(Product::getCode).collect(Collectors.toSet());
+//        List<User> userList = this.iUserService.findALL();
+//        List<Cart> carts = new ArrayList<>();
+//        userList.forEach(user -> {
+//            if (!CollectionUtils.isEmpty(user.getOrders())) {
+//                user.getOrders().forEach(order -> {
+//                    if (!CollectionUtils.isEmpty(order.getCarts())) {
+//                        carts.addAll(order.getCarts());
+//                    }
+//                });
+//            }
+//        });
+//
+//        Map<String, Integer> productSaled = new HashMap<>();
+//        carts.stream().forEach(cart -> {
+//            if (productList.contains(cart.getProduct().getCode())) {
+//                String productCode = cart.getProduct().getCode();
+//                if (!productSaled.containsKey(productCode)) {
+//                    productSaled.put(productCode, cart.getAmount());
+//                } else {
+//                    productSaled.put(productCode, productSaled.get(productCode) +  cart.getAmount());
+//                }
+//            }
+//        });
+//
+//        products.forEach(product -> {
+//            product.setProductSaled();
+//        });
+//    }
 
     public Result validateProduct(ProductForm product) {
         Result  result = new Result();

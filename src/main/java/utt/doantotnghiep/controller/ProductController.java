@@ -47,6 +47,7 @@ public class ProductController extends BaseController {
         return Constant.TEMPLATE_VIEW.PRODUCT;
     }
 
+
     @RequestMapping(value = {"/product/search"}, method = RequestMethod.GET)
     public String productSearch(Model model, @RequestParam(value = "textSearch", required =  false, defaultValue = "")
                                             String textSearch,
@@ -127,7 +128,9 @@ public class ProductController extends BaseController {
                 OutputStream outputStream;
 
                 outputStream = response.getOutputStream();
+                assert is != null;
                 FileCopyUtils.copy(is, outputStream);
+                is.close();
             }
         } catch (Exception ex) {
             logger.error(ex.getMessage(), ex);
@@ -335,6 +338,10 @@ public class ProductController extends BaseController {
         }
        return  "redirect:/admin/product/search?flag=" + Constant.FLAG_CODE.DELETE
                 + "&catalogCode=" + catalogCode + "&page=" + 1;
+    }
+    @RequestMapping(value = {"/admin/statistics"}, method = RequestMethod.GET)
+    public String statistics() {
+        return Constant.TEMPLATE_VIEW.ADMIN_STATISTICS;
     }
 
 }

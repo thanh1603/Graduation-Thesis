@@ -229,7 +229,7 @@ public class CartController extends BaseController {
         try{
             // this.userCurrent().getEmail() lay ra email cua user dang dang nhap
             Result result = this.iOrderService.printOrder(userID, orderCode );
-//            Result result = this.iOrderService.printOrder("linh12@gmail.com", orderCode );
+//            Result result = this.iOrderService.printOrder("thanh12@gmail.com", orderCode );
 
             InputStream is = new FileInputStream(result.getFileName());
             // Kieu file tra ve la dang pdf

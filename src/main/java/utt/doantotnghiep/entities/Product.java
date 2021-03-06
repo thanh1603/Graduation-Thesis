@@ -1,5 +1,7 @@
 package utt.doantotnghiep.entities;
 
+import org.springframework.data.annotation.Transient;
+
 public class Product{
     private  String id;
     private  String code;
@@ -11,6 +13,7 @@ public class Product{
     private  String imageSmall;
     private  String imageLarge;
     private int amount;
+    private int productSaled;
 
     public String getId() {
         return id;
@@ -90,6 +93,14 @@ public class Product{
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    public int getProductSaled() {
+        return productSaled;
+    }
+
+    public void setProductSaled(int productSaled) {
+        this.productSaled = productSaled;
     }
 
     @Override

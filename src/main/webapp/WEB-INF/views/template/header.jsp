@@ -436,7 +436,7 @@
         <div class="header-content clearfix a-center">
             <div class="row">
                 <div class="col-xs-12 col-md-3 text-lg-left">
-                    <div class="logo inline-block" id="logo"><a href="/" class="logo-wrapper">
+                    <div class="logo inline-block" id="logo"><a href="/doantotnghiep" class="logo-wrapper">
                         <img src="<c:url value='/resources/images/logo_small-2.png'/>"
                              alt="Fresh Food"> </a></div>
                 </div>

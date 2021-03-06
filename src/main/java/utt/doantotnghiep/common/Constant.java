@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Constant {
     public static class TEMPLATE_VIEW {
-        //tran sinh thanh
+
         // Trang chu
         public static final String INDEX = "index";
         // Trang tat ca san pham
@@ -43,6 +43,7 @@ public class Constant {
         public static final String ADMIN_LIST_ORDER = "admin/listOrder";
         public static final String ADMIN_ORDER_DETAIL = "admin/orderDetail";
         public static final String ACCESS_DENIED = "acessdenied";
+        public static final String ADMIN_STATISTICS = "admin/statistics";
 
     }
 
@@ -84,6 +85,7 @@ public class Constant {
 
     public static final String ROOT_IMAGE_URL = "D:\\doantotnghiep\\images\\" ;
     public static final String ROOT_CART = "D:\\doantotnghiep\\carts\\";
+    public static final File FONT_VIET_NAME_NORMAL = new File(("D:\\doantotnghiep\\font\\vuTimes.ttf"));
 
     public static final String BLANK = "";
 

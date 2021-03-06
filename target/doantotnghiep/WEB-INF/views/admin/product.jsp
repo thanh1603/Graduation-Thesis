@@ -62,8 +62,9 @@
                         <td class="text-center"><strong>Mã sản phẩm</strong></td>
                         <td class="text-center"><strong>Tên sản phẩm</strong></td>
                         <td class="text-center"><strong>Đơn giá</strong></td>
-                        <td class="text-center"><strong>Số lượng</strong></td>
+                        <td class="text-center"><strong>Số lượng còn lại</strong></td>
                         <td class="text-center"><strong>Giảm giá</strong></td>
+                        <td class="text-center"><strong>Số lượng đã bán</strong></td>
                         <td class="text-center"><strong>Hoạt động</strong></td>
                     </tr>
                     </thead>
@@ -78,6 +79,7 @@
                             <td class="text-right"><span>${product.price}</span></td>
                             <td class="text-right"><span>${product.amount}</span></td>
                             <td class="text-right"><span>${product.discount}</span></td>
+                            <td class="text-right"><span>${product.productSaled}</span></td>
                             <td class="text-center">
                                 <button type="button" data-toggle="tooltip" title="Cập nhật" class="btn btn-success"
                                         onclick="window.location = '${pageContext.request.contextPath}/admin/product/update/${product.catalogCode}/${product.code}'">

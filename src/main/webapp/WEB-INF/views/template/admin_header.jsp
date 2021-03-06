@@ -59,7 +59,7 @@
     <!-- ============================================================== -->
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-            <a class="navbar-brand" href="#">Do An Tot Nghiep</a>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/admin/catalog">Do An Tot Nghiep</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -115,7 +115,7 @@
                                         <a class="nav-link" href="${pageContext.request.contextPath}/admin/catalog">Danh Mục Sản Phẩm</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/product">Danh Sách Sản Phẩm</a>
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/product">Danh Sách & thống kê Sản Phẩm</a>
                                     </li>
 <%--                                    <li class="nav-item">--%>
 <%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/#">Danh sach tai khoan</a>--%>
@@ -123,23 +123,29 @@
 <%--                                    <li class="nav-item">--%>
 <%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/#">Danh sach bai viet</a>--%>
 <%--                                    </li>--%>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
-                               data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Thống kê báo cáo</a>
-                            <div id="submenu-2" class="collapse submenu" style="">
-                                <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="${pageContext.request.contextPath}/admin/orders">Danh sách đơn hàng</a>
                                     </li>
 <%--                                    <li class="nav-item">--%>
-<%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/#">Thong ke bao cao</a>--%>
+<%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/statistics">Thống kê báo cáo</a>--%>
 <%--                                    </li>--%>
                                 </ul>
                             </div>
                         </li>
+<%--                        <li class="nav-item">--%>
+<%--                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"--%>
+<%--                               data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Thống kê báo cáo</a>--%>
+<%--                            <div id="submenu-2" class="collapse submenu" style="">--%>
+<%--                                <ul class="nav flex-column">--%>
+<%--                                    <li class="nav-item">--%>
+<%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/orders">Danh sách đơn hàng</a>--%>
+<%--                                    </li>--%>
+<%--                                    <li class="nav-item">--%>
+<%--                                        <a class="nav-link" href="${pageContext.request.contextPath}/admin/#">Thong ke bao cao</a>--%>
+<%--                                    </li>--%>
+<%--                                </ul>--%>
+<%--                            </div>--%>
+<%--                        </li>--%>
                     </ul>
                 </div>
             </nav>
